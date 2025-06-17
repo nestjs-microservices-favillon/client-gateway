@@ -28,3 +28,33 @@ Acceder por la url `http://localhost:3000/api/v1/`
 ![One Product](./img/getProduct.png)
 ----------------------
 ![Get Products](./img/allProducts.png)
+
+
+
+Data kafka
+```bash
+{
+	"name": "{% faker 'randomFirstName' %}",
+	"lastname": "{% faker 'randomLastName' %}",
+	"address" : "{% faker 'randomLocale' %}",
+	"phone" : "{% faker 'randomPhoneNumber' %}",
+	"country" : "{% faker 'randomCountry' %}",
+	"email": "{% faker 'randomEmail' %}",
+	"date" : {% faker 'timestamp' %}
+}
+```
+
+
+
+Data MQ
+```bash
+{
+	"name": "{% faker 'randomFirstName' %}",
+	"lastname": "{% faker 'randomLastName' %}",
+	"address" : "{% faker 'randomLocale' %}",
+	"phone" : "{% faker 'randomPhoneNumber' %}",
+	"country" : "{% faker 'randomCountry' %}",
+	"email": "{% faker 'randomEmail' %}",
+	"date" : {% faker 'timestamp' %}
+}
+```

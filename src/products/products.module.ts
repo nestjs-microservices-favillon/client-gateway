@@ -11,12 +11,12 @@ import { envs } from 'src/config';
   imports: [
     ClientsModule.register([
       {
-        name:  PRODUCT_SERVICE,
+        name: PRODUCT_SERVICE,
         transport: Transport.TCP,
         options: {
           host: envs.productsMSHost,
           port: envs.productsMSPort,
-        }
+        },
       },
     ]),
   ],
@@ -24,6 +24,6 @@ import { envs } from 'src/config';
 export class ProductsModule {
   constructor() {
     console.log('products module init');
-    console.log({envs})
+    console.log({ envs });
   }
 }
